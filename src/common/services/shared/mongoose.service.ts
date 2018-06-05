@@ -5,9 +5,9 @@ import { Service } from '@tsed/common';
 
 @Service()
 export class MongooseService {
-    static resource: mongoose.Connection;
+    static resource: any;
 
-    static async connect(): Promise<mongoose.Connection> {
+    static async connect(): Promise<any> {
         const mongoUrl = process.env.MONGODB_URI;
 
         if (MongooseService.resource) {
