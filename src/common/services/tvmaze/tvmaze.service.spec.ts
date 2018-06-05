@@ -1,23 +1,36 @@
+import { ParseService } from "@tsed/common";
+import {inject} from "@tsed/testing";
 import { UserRepositoryToken } from '../../../api/show/show.model';
-import { getInjectionService } from '../../utils/tests/injectors';
 import { TvMazeService } from './tvmaze.service';
 
 describe('UserService', () => {
-    it('should fetch user by id', async () => {
-        const inject = await getInjectionService(this);
-        const locals = new Map();
-        const userData = { name: 'test' };
-        const findSpy = jest.fn().mockReturnValue(Promise.resolve(userData));
-        locals.set(UserRepositoryToken, {
-            findById: findSpy
-        });
+    let service;
 
-        const service = inject.invoke<TvMazeService>(TvMazeService, locals);
-        const foundUser = await service.getShowById('123');
+    beforeEach(inject([TvMazeService], (_tvmazeService_: TvMazeService) => {
+        service = _tvmazeService_;
+    }));
 
-        expect(foundUser).toBeDefined();
-        // expect(foundUser).toEqual(userData);
-        // expect(findSpy).toHaveBeenCalledTimes(1);
-        // expect(findSpy.mock.calls[0][0]).toBe('123');
+    it('should fetch show by id', async () => {
+        const foundShow = await service.getShowById('123');
+        expect(foundShow).toHaveProperty('id');
+        expect(foundShow).toHaveProperty('url');
+        expect(foundShow).toHaveProperty('name');
+        expect(foundShow).toHaveProperty('type');
+        expect(foundShow).toHaveProperty('language');
+        expect(foundShow).toHaveProperty('genres');
+        expect(foundShow).toHaveProperty('status');
+        expect(foundShow).toHaveProperty('runtime');
+        expect(foundShow).toHaveProperty('premiered');
+        expect(foundShow).toHaveProperty('officialSite');
+        expect(foundShow).toHaveProperty('schedule');
+        expect(foundShow).toHaveProperty('rating');
+        expect(foundShow).toHaveProperty('weight');
+        expect(foundShow).toHaveProperty('network');
+        expect(foundShow).toHaveProperty('webChannel');
+        expect(foundShow).toHaveProperty('externals');
+        expect(foundShow).toHaveProperty('image');
+        expect(foundShow).toHaveProperty('summary');
+        expect(foundShow).toHaveProperty('updated');
+        expect(foundShow).toHaveProperty('_links');
     });
 });

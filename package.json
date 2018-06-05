@@ -41,6 +41,7 @@
     "@tsed/common": "^4.20.0",
     "@tsed/core": "^4.20.0",
     "@tsed/swagger": "^4.20.0",
+    "@tsed/testing": "^4.20.2",
     "ajv": "^6.5.0",
     "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.18.3",
