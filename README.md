@@ -1,4 +1,5 @@
 # Node Typescript Rest-API (Scrapper)
+[![Build Status](https://travis-ci.org/vip-git/node-rest-api-scrapper.svg?branch=master)](https://travis-ci.org/vip-git/node-rest-api-scrapper) [![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm) [![dependencies](https://david-dm.org/vip-git/node-rest-api-scrapper.svg)](https://david-dm.org/vip-git/node-rest-api-scrapper) [![dev-dependencies](https://david-dm.org/vip-git/node-rest-api-scrapper/dev-status.svg)](https://david-dm.org/vip-git/node-rest-api-scrapper)
 #### (ts-express-decorators) (express-http-proxy) (jest)
 ------------------------------
 ### Prerequisites
