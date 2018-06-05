@@ -1,5 +1,5 @@
 # Node Typescript Rest-API (Scrapper)
-#### (ts-express-decorators) (express-http-proxy (jest)
+#### (ts-express-decorators) (express-http-proxy) (jest)
 ------------------------------
 ### Prerequisites
 - [MongoDB](https://www.mongodb.org/downloads)
