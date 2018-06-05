@@ -18,7 +18,7 @@ tmp
 public/css/main.css
 
 # API keys and secrets
-.env
+# .env [Temporary]
 
 # Dependency directory
 node_modules

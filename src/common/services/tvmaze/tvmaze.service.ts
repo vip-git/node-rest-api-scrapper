@@ -34,7 +34,7 @@ export class TvMazeService {
         return await fetch('http://api.tvmaze.com/shows?' + queryString)
                         .then(res => res.json())
                         .then(json => _.chain(json)
-                                        .map(function(values) {
+                                        .map(function(values: any) {
                                             values._links.self.href = _.replace(values._links.self.href,
                                                 'api.tvmaze.com', 'localhost:3000/api');
                                             values._links.previousepisode.href = _.replace(values._links.previousepisode.href,

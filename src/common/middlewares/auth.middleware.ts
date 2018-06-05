@@ -33,7 +33,7 @@ export class AuthMiddleware implements IMiddleware  {
      * @param req
      */
     private extractHeaderFromRequest(req: Request): string {
-        const authHeader = req.headers.authorization;
+        const authHeader: any = req.headers.authorization;
 
         if (authHeader && authHeader.split(' ')[0] === 'Bearer') {
             return authHeader.split(' ')[1];
