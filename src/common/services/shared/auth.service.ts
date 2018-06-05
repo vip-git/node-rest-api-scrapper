@@ -1,7 +1,7 @@
 import * as jwt from 'jsonwebtoken';
 import * as moment from 'moment';
 
-import { Inject, Service } from 'ts-express-decorators';
+import { Inject, Service } from '@tsed/common';
 
 const DAY = 60000 * 60 * 24;
 export const TOKEN_EXP = DAY * 7;

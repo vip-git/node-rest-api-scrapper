@@ -1,7 +1,7 @@
 // Library
 import fetch from 'node-fetch';
 import * as _ from 'lodash';
-import { Inject, Service } from 'ts-express-decorators';
+import { Inject, Service } from '@tsed/common';
 
 @Service()
 export class TvMazeService {

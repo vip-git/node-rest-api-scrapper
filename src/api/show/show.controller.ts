@@ -1,6 +1,6 @@
 import { Request } from 'express';
-import { Controller, Get, PathParams, QueryParams, Authenticated, Required, Req } from 'ts-express-decorators';
-import { Returns } from 'ts-express-decorators/lib/swagger';
+import { Controller, Get, PathParams, QueryParams, Authenticated, Required, Req } from '@tsed/common';
+import { Returns } from '@tsed/swagger';
 import { ShowModel } from './show.model';
 import { TvMazeService } from '../../common/services/tvmaze/tvmaze.service';
 

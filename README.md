@@ -19,4 +19,5 @@ npm start (Please make sure mongoDB is running in background on port 27017)
 Navigate: (Requires you to set headers: `Authorization Bearer AbCdEf123456`)
 - http://localhost:3000/api/show (API)
 - http://localhost:3000/proxy/show (PROXY - NO headers required for now)
+- http://localhost:3000/api-docs/ (Swagger UI)
 ```

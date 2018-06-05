@@ -1,7 +1,7 @@
 import { Request } from 'express';
 import { IMiddleware, OverrideMiddleware, AuthenticatedMiddleware,
     EndpointInfo, EndpointMetadata, Req
-} from 'ts-express-decorators';
+} from '@tsed/common';
 import { AuthService } from '../services/shared/auth.service';
 import { ApiError, ErrorInfo } from '../utils/error';
 
