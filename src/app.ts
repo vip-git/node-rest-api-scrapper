@@ -67,7 +67,7 @@ export class Server extends ServerLoader {
     }
 
     async $onInit(): Promise<any> {
-        await MongooseService.connect();
+        // await MongooseService.connect(); // temp disabling mongo for now
         $log.debug('DB connected');
     }
 
